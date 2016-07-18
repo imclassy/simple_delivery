@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F45E2014-3D36-76CE-0976-48DD6F999A1D" name="INVENTORY_MOVEMENTS">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:18:37 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="inventory_movement_id" id="BE3A4795-D7D2-B059-EF30-1AB09D8A37B8">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:37:58 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="article_id" id="DA0C73F4-996F-2155-24A5-C7EBE47E019D">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:37:58 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>C8FB29B9-84C9-E010-562E-EEEF2C505805</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D639ACEA-7382-707A-CDC1-045F3D8FF1E3" referredColumn="C8FB29B9-84C9-E010-562E-EEEF2C505805"/>
+</associations>
+</Column>
+<Column name="type" id="342062C5-B9EA-9712-B720-95AA8CB83F13">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:37:58 UTC</createdTime>
+<comment>Inventory movement type: IN for movements that sum article stock or OUT for movements that substract stock.</comment>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="2A25DBE7-8AF9-08D8-491A-0C62287B66A0">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:37:58 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>ED3E2583-1219-4ABD-A0E4-EF7CDA6BEF4A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inventory_movement_source_id" id="A207F0C4-1917-839B-45CF-CF4916EE212C">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:37:58 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>9FEED22C-1F0B-978D-982D-0F009B28A8B6</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3EFAC9A-1EC0-1BDB-ECEF-E93DF321BC94" referredColumn="9FEED22C-1F0B-978D-982D-0F009B28A8B6"/>
+</associations>
+</Column>
+<Column name="state_id" id="09273615-55C7-484B-103A-4353400B1DA6">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:39:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>96AC836A-DA25-2D83-C8B7-68F4C47EF0C0</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C622FE5-4D3D-E4A1-0968-00F255838105" referredColumn="96AC836A-DA25-2D83-C8B7-68F4C47EF0C0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A4370888-34E2-2029-13EA-99D07D101C90" name="INVENTORY_MOVEMENTS_PK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:37:58 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE3A4795-D7D2-B059-EF30-1AB09D8A37B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="605671ED-C042-BAD1-47A1-C99B76F1A74E" name="INVENTORY_MOV_SOURCES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:39:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A207F0C4-1917-839B-45CF-CF4916EE212C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2362367F-F690-A437-E1D3-9E59EBC98EC1" name="INVENTORY_MOV_ARTICLES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:39:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA0C73F4-996F-2155-24A5-C7EBE47E019D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79623C89-C80A-4D82-B343-D392D291DD1A" name="INVENTORY_MOV_STATES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:39:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09273615-55C7-484B-103A-4353400B1DA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="INVENTORY_MOVEMENTS_TYPE_CK" directorySegmentName="seg_0" id="F24DA940-D1F9-E239-B8F0-ED768A6397A0">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:39:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<rule>type in (&apos;IN&apos;,&apos;OUT&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

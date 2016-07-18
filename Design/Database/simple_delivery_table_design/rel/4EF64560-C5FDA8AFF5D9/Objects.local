@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="BC396766-4C8B-D8AD-4450-DE19ABEDC316" name="ARTICLES" seqName="seg_0"/>
+   <object objectType="Table" objectID="1917958E-0CC1-C28F-4EB7-CCE7C652E183" name="ARTICLE_TYPES" seqName="seg_0"/>
+   <object objectType="Table" objectID="1F4C834E-46D9-E6E8-F65C-59CEF801B9C7" name="BRANDS" seqName="seg_0"/>
+   <object objectType="Table" objectID="A8C1EB06-9456-EDD4-9757-33D121FDF548" name="CUSTOMERS" seqName="seg_0"/>
+   <object objectType="Table" objectID="F45E2014-3D36-76CE-0976-48DD6F999A1D" name="INVENTORY_MOVEMENTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="44B3BB59-88EB-E427-BE94-E781F8B08593" name="INVENTORY_MOVEMENT_SOURCES" seqName="seg_0"/>
+   <object objectType="Table" objectID="5D6C94C1-C412-A477-2610-F2E8E3025693" name="ORDERS" seqName="seg_0"/>
+   <object objectType="Table" objectID="593A0699-4C1D-263F-C040-5C05CB3917F6" name="ORDERS_DETAILS" seqName="seg_0"/>
+   <object objectType="Table" objectID="94A69E0A-021E-BA98-B8B9-50C6E6550F09" name="PEOPLE" seqName="seg_0"/>
+   <object objectType="Table" objectID="1C6A45BA-419B-5655-2507-1AB7F534B4F7" name="SELLERS" seqName="seg_0"/>
+   <object objectType="Table" objectID="B913404D-4C21-063B-71DB-7030E2F84935" name="SHOPS" seqName="seg_0"/>
+   <object objectType="Table" objectID="3672151F-2CD8-AAF5-A068-F3CB6D9668C2" name="SHOP_TYPES" seqName="seg_0"/>
+   <object objectType="Table" objectID="0919FB0A-E48B-A959-C4A3-F8BB6CCB0B70" name="STATES" seqName="seg_0"/>
+   <object objectType="Table" objectID="F90BE78A-C1C5-072B-5074-8B44149DD837" name="USERS" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F4A0CA0D-9AA9-0D45-0080-77990AA7E690" name="ARTICLES_ARTICLE_TYPES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="07E8E586-73D4-6DDE-51C1-0745F968CCDC" name="ARTICLES_BRANDS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="37FFBF02-59DA-8266-6464-B8D34C6D7594" name="ARTICLES_SHOPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2A76A86F-47D3-228D-885D-61A563962AB0" name="ARTICLES_STATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FD1F22EE-B965-57C5-EE70-097943A6AD93" name="ARTICLE_TYPES_SHOPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="970D6A0D-73B6-5813-7287-4CE12FE6FAF2" name="BRANDS_SHOPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D538B1E8-372E-4EF4-9DBA-CB700EC172CA" name="CUSTOMERS_STATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="415ED835-C922-50A9-0D03-136864E21A89" name="CUSTOMERS_USERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0782A795-13F2-8A6B-7DFA-2DF426C26486" name="ORDERS_DETAILS_ORDERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D639ACEA-7382-707A-CDC1-045F3D8FF1E3" name="INVENTORY_MOV_ARTICLES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F3EFAC9A-1EC0-1BDB-ECEF-E93DF321BC94" name="INVENTORY_MOV_SOURCES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5C622FE5-4D3D-E4A1-0968-00F255838105" name="INVENTORY_MOV_STATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3CA21204-E5B7-1851-20D9-606315D01191" name="ORDERS_CUSTOMERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C1A6BFB1-FC59-0EDE-11BF-0B935C94AA4F" name="ORDERS_DETAILS_ARTICLES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4EB83B5D-4580-8722-FBE3-B408CAF591AD" name="ORDERS_SHOPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="ED2584A9-3FD2-BB17-BCF7-9EA143D494E4" name="ORDERS_STATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8E0CAAC5-A641-31AC-0D30-43357C3FAB80" name="SELLERS_STATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0E7E12BD-D394-F876-9F13-247A3A84E98D" name="SELLERS_USERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="04166ED4-FE14-6A8B-2008-20328B4F3FA3" name="SHOPS_SELLERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="89F9024A-A7E7-B6EC-1069-0B9ADBDA3C60" name="SHOPS_SHOP_TYPES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="37CE2C7F-2581-4A8F-843B-642042696709" name="SHOPS_STATES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="99332C94-0D2C-F791-00E2-5DA125BF2F11" name="USERS_PEOPLE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="326582C6-B4F9-841A-E69F-54145FCB3045" name="USERS_STATES_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

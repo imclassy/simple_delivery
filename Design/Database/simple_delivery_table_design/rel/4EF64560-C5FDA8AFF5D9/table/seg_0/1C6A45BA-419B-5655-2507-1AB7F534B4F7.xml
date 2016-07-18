@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C6A45BA-419B-5655-2507-1AB7F534B4F7" name="SELLERS">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 23:46:37 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="871942AD-2AF7-6A8B-3C94-5408BCADA08B">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 23:46:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>A30B18C1-2DD7-2344-2008-A1F56B731458</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E7E12BD-D394-F876-9F13-247A3A84E98D" referredColumn="A30B18C1-2DD7-2344-2008-A1F56B731458"/>
+</associations>
+</Column>
+<Column name="state_id" id="7C684474-2273-9768-1D15-A07F87A77240">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 23:54:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>96AC836A-DA25-2D83-C8B7-68F4C47EF0C0</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E0CAAC5-A641-31AC-0D30-43357C3FAB80" referredColumn="96AC836A-DA25-2D83-C8B7-68F4C47EF0C0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72254C3A-BAB2-00FE-B344-F4E46A27AC92" name="SELLERS_PK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 23:46:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="871942AD-2AF7-6A8B-3C94-5408BCADA08B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C8EB7FA-5B67-A46B-AD0E-E5B02BB944BA" name="SELLERS_USERS_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 23:54:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="871942AD-2AF7-6A8B-3C94-5408BCADA08B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF0A8B51-992C-DCF5-194F-6BA6BF16D095" name="SELLERS_STATES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:59:33 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C684474-2273-9768-1D15-A07F87A77240"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

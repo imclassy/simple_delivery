@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="simple_delivery_table_design" id="D400C511-2833-F289-465C-2A3F6A7F203A" version="3.5">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 19:35:21 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D400C511-2833-F289-465C-2A3F6A7F203A</designId>
+</OSDM_Design>

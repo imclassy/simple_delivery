@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F3EFAC9A-1EC0-1BDB-ECEF-E93DF321BC94" name="INVENTORY_MOV_SOURCES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:39:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<containerWithKeyObject>F45E2014-3D36-76CE-0976-48DD6F999A1D</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>605671ED-C042-BAD1-47A1-C99B76F1A74E</localFKIndex>
+<keyObject>A46C100B-9B28-56F8-86A5-F7A10CDDFD66</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

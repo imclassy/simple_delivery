@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F4C834E-46D9-E6E8-F65C-59CEF801B9C7" name="BRANDS">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:30:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="brand_id" id="7E2958B2-CA25-6FAB-5723-087B1639BE5E">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:31:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="46404509-C68B-D806-8BC9-00551C53AEE4">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:31:14 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96A3DB4F-F25D-9735-400A-D8FFD5D3DC84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shop_id" id="61100853-77CA-FF4B-2767-1AE5AEF685C1">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:31:59 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>853D12D7-C70B-9A2F-DB6C-C60FA5EFB936</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="970D6A0D-73B6-5813-7287-4CE12FE6FAF2" referredColumn="853D12D7-C70B-9A2F-DB6C-C60FA5EFB936"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4033A2D3-6D19-A322-9691-2695EE552926" name="BRANDS_PK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:31:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2958B2-CA25-6FAB-5723-087B1639BE5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28412927-458F-5D9C-A38F-512D8D3210F8" name="BRANDS_SHOPS_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:32:30 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61100853-77CA-FF4B-2767-1AE5AEF685C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

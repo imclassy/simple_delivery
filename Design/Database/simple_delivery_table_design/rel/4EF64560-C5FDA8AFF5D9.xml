@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="simple_delivery" id="4EF64560-EC04-E8DE-474C-C5FDA8AFF5D9" mainViewID="A8E55841-B1FF-441A-AC59-0EA778BA0C71">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-17 19:37:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+</relationalModel>

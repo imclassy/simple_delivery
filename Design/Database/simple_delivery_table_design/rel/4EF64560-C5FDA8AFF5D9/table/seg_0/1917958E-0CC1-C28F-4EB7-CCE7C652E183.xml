@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1917958E-0CC1-C28F-4EB7-CCE7C652E183" name="ARTICLE_TYPES">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:28:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="article_type_id" id="304FF82A-A3A8-3A59-4745-2222312E2FB2">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:29:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="E6A4BF81-B21B-317A-8C87-F5E9D7CA11FE">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:29:55 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96A3DB4F-F25D-9735-400A-D8FFD5D3DC84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shop_id" id="BE874800-B671-4AD5-553A-58865C25293B">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:33:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>853D12D7-C70B-9A2F-DB6C-C60FA5EFB936</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD1F22EE-B965-57C5-EE70-097943A6AD93" referredColumn="853D12D7-C70B-9A2F-DB6C-C60FA5EFB936"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED99FEAD-7484-18B8-B3BC-3FB86DD6297D" name="ARTICLE_TYPES_PK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:29:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="304FF82A-A3A8-3A59-4745-2222312E2FB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D40D8302-6729-5826-D06D-46C71739AA6C" name="ARTICLE_TYPES_SHOPS_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:33:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE874800-B671-4AD5-553A-58865C25293B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

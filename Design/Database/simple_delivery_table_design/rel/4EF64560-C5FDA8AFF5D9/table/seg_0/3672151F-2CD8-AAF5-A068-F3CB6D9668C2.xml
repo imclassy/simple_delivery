@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3672151F-2CD8-AAF5-A068-F3CB6D9668C2" name="SHOP_TYPES">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:22:32 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shop_type_id" id="E50E852F-FB71-EBDD-B475-8C1EBEB0AABB">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:22:52 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="9FC3B10E-0BAF-88A3-F962-3E23964C3726">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:23:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96A3DB4F-F25D-9735-400A-D8FFD5D3DC84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02F89633-E697-D8E3-8D14-DFB1F68CC386" name="SHOP_TYPES_PK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:22:52 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E50E852F-FB71-EBDD-B475-8C1EBEB0AABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

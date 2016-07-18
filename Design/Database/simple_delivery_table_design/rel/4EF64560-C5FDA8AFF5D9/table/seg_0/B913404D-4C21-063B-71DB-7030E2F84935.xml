@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B913404D-4C21-063B-71DB-7030E2F84935" name="SHOPS">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:02:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shop_id" id="853D12D7-C70B-9A2F-DB6C-C60FA5EFB936">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:02:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="24764B6E-D0D5-B002-5BA3-A8ADBCADD179">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:06:19 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>871942AD-2AF7-6A8B-3C94-5408BCADA08B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04166ED4-FE14-6A8B-2008-20328B4F3FA3" referredColumn="871942AD-2AF7-6A8B-3C94-5408BCADA08B"/>
+</associations>
+</Column>
+<Column name="shop_type_id" id="46483362-0333-289B-B0BD-A1F7DF733F53">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:08:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>E50E852F-FB71-EBDD-B475-8C1EBEB0AABB</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89F9024A-A7E7-B6EC-1069-0B9ADBDA3C60" referredColumn="E50E852F-FB71-EBDD-B475-8C1EBEB0AABB"/>
+</associations>
+</Column>
+<Column name="name" id="A3F882EA-F82E-9145-B378-9F1056FF551C">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:08:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96A3DB4F-F25D-9735-400A-D8FFD5D3DC84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telphone" id="A364AEEB-B0CC-6E84-065E-2287C3A629DB">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:09:18 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>ED3E2583-1219-4ABD-A0E4-EF7CDA6BEF4A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celphone" id="8AF29DF6-48CC-113D-74FE-95821BB13B4C">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:12:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>ED3E2583-1219-4ABD-A0E4-EF7CDA6BEF4A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="0981D7A0-0BAE-B289-6357-1DE8F462E0C7">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:13:03 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9D1AD06D-4226-8E9D-35A5-8796E4166BBD</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geoloc" id="733ABDD4-8866-ACCE-0856-0C0F31221A58">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:13:50 UTC</createdTime>
+<comment>Shop&apos;s geografic location coordinates</comment>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9D1AD06D-4226-8E9D-35A5-8796E4166BBD</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coverage" id="B9130025-EABF-DFEA-9324-1683F89BD1B0">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:18:11 UTC</createdTime>
+<comment>Shop&apos;s delivery coverage in meters</comment>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>ED3E2583-1219-4ABD-A0E4-EF7CDA6BEF4A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="avg_delivery_time" id="3B0FCFB2-38AF-60C4-DA4C-4EB9F1D4A228">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:20:55 UTC</createdTime>
+<comment>Shop&apos;s average delivery time in minutes</comment>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state_id" id="CAC4064B-468E-879C-7A19-E20EAFC5C751">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:21:19 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DBB92A10-524A-CAEF-7344-10C9D79622DE</domain>
+<delegate>96AC836A-DA25-2D83-C8B7-68F4C47EF0C0</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37CE2C7F-2581-4A8F-843B-642042696709" referredColumn="96AC836A-DA25-2D83-C8B7-68F4C47EF0C0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FECE541-EEBB-A91B-041F-3649AFCAD914" name="SHOPS_PK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:02:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="853D12D7-C70B-9A2F-DB6C-C60FA5EFB936"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE4C1889-CB26-9ED3-8761-EB5FED48901F" name="SHOPS_SELLERS_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:21:40 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24764B6E-D0D5-B002-5BA3-A8ADBCADD179"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0004F70-6A7B-7CB3-655C-A39E30034AE4" name="SHOPS_SHOP_TYPES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 00:23:32 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46483362-0333-289B-B0BD-A1F7DF733F53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61D43FFE-077D-7487-42CD-D17108EDF069" name="SHOPS_STATES_FK">
+<createdBy>Elias</createdBy>
+<createdTime>2016-07-18 01:01:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>simple_delivery_table_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAC4064B-468E-879C-7A19-E20EAFC5C751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+[
+    {
+        "targetName" : "sys: pdborcl",
+        "host" : "localhost",
+        "sid" : "pdborcl as sysdba",
+        "port" : 1521,
+        "user" : "sys",
+        "password" : "Pello1994"
+    },
+    {
+        "targetName" : "simple_delivery: pdborcl",
+        "host" : "localhost",
+        "sid" : "pdborcl",
+        "port" : 1521,
+        "user" : "simple_delivery",
+        "password" : "123456"
+    }
+]

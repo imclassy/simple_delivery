@@ -1,4 +1,4 @@
-CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_articles IS
+create or replace PACKAGE BODY                 tapi_articles IS
 
    /**
    * TAPI_ARTICLES
@@ -288,7 +288,6 @@ CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_articles IS
         logger.append_param(l_params, 'p_articles_rec.description', ins.p_articles_rec.description);
         logger.append_param(l_params, 'p_articles_rec.stock', ins.p_articles_rec.stock);
         logger.append_param(l_params, 'p_articles_rec.price', ins.p_articles_rec.price);
-        logger.append_param(l_params, 'p_articles_rec.picture', ins.p_articles_rec.picture);
         logger.append_param(l_params, 'p_articles_rec.shop_id', ins.p_articles_rec.shop_id);
         logger.append_param(l_params, 'p_articles_rec.brand_id', ins.p_articles_rec.brand_id);
         logger.append_param(l_params, 'p_articles_rec.article_type_id', ins.p_articles_rec.article_type_id);
@@ -333,7 +332,6 @@ CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_articles IS
        logger.append_param(l_params, 'p_articles_rec.description', upd.p_articles_rec.description);
        logger.append_param(l_params, 'p_articles_rec.stock', upd.p_articles_rec.stock);
        logger.append_param(l_params, 'p_articles_rec.price', upd.p_articles_rec.price);
-       logger.append_param(l_params, 'p_articles_rec.picture', upd.p_articles_rec.picture);
        logger.append_param(l_params, 'p_articles_rec.shop_id', upd.p_articles_rec.shop_id);
        logger.append_param(l_params, 'p_articles_rec.brand_id', upd.p_articles_rec.brand_id);
        logger.append_param(l_params, 'p_articles_rec.article_type_id', upd.p_articles_rec.article_type_id);
@@ -401,7 +399,6 @@ CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_articles IS
        logger.append_param(l_params, 'p_articles_rec.description', upd_rowid.p_articles_rec.description);
        logger.append_param(l_params, 'p_articles_rec.stock', upd_rowid.p_articles_rec.stock);
        logger.append_param(l_params, 'p_articles_rec.price', upd_rowid.p_articles_rec.price);
-       logger.append_param(l_params, 'p_articles_rec.picture', upd_rowid.p_articles_rec.picture);
        logger.append_param(l_params, 'p_articles_rec.shop_id', upd_rowid.p_articles_rec.shop_id);
        logger.append_param(l_params, 'p_articles_rec.brand_id', upd_rowid.p_articles_rec.brand_id);
        logger.append_param(l_params, 'p_articles_rec.article_type_id', upd_rowid.p_articles_rec.article_type_id);
@@ -465,7 +462,6 @@ CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_articles IS
        logger.append_param(l_params, 'p_articles_rec.description', web_upd.p_articles_rec.description);
        logger.append_param(l_params, 'p_articles_rec.stock', web_upd.p_articles_rec.stock);
        logger.append_param(l_params, 'p_articles_rec.price', web_upd.p_articles_rec.price);
-       logger.append_param(l_params, 'p_articles_rec.picture', web_upd.p_articles_rec.picture);
        logger.append_param(l_params, 'p_articles_rec.shop_id', web_upd.p_articles_rec.shop_id);
        logger.append_param(l_params, 'p_articles_rec.brand_id', web_upd.p_articles_rec.brand_id);
        logger.append_param(l_params, 'p_articles_rec.article_type_id', web_upd.p_articles_rec.article_type_id);
@@ -550,7 +546,6 @@ CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_articles IS
        logger.append_param(l_params, 'p_articles_rec.description', web_upd_rowid.p_articles_rec.description);
        logger.append_param(l_params, 'p_articles_rec.stock', web_upd_rowid.p_articles_rec.stock);
        logger.append_param(l_params, 'p_articles_rec.price', web_upd_rowid.p_articles_rec.price);
-       logger.append_param(l_params, 'p_articles_rec.picture', web_upd_rowid.p_articles_rec.picture);
        logger.append_param(l_params, 'p_articles_rec.shop_id', web_upd_rowid.p_articles_rec.shop_id);
        logger.append_param(l_params, 'p_articles_rec.brand_id', web_upd_rowid.p_articles_rec.brand_id);
        logger.append_param(l_params, 'p_articles_rec.article_type_id', web_upd_rowid.p_articles_rec.article_type_id);

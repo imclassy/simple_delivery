@@ -8,16 +8,16 @@
 
  CREATE TABLE ARTICLES
    (
-      article_id  NUMBER (10) NOT NULL ,
+      article_id  NUMBER GENERATED ALWAYS AS IDENTITY ,
       name        VARCHAR2 (50) NOT NULL ,
       description VARCHAR2 (300) ,
       stock       NUMBER (20,10) NOT NULL ,
       price       NUMBER (30,10) NOT NULL ,
       picture BLOB ,
-      shop_id         NUMBER (10) NOT NULL ,
-      brand_id        NUMBER (10) NOT NULL ,
-      article_type_id NUMBER (10) NOT NULL ,
-      state_id        NUMBER (10) NOT NULL
+      shop_id         NUMBER NOT NULL ,
+      brand_id        NUMBER NOT NULL ,
+      article_type_id NUMBER NOT NULL ,
+      state_id        NUMBER NOT NULL
    ) ;
 
 ALTER TABLE ARTICLES ADD CONSTRAINT ARTICLES_PK PRIMARY KEY (
@@ -25,9 +25,9 @@ article_id ) ;
 
  CREATE TABLE ARTICLE_TYPES
    (
-      article_type_id NUMBER (10) NOT NULL ,
+      article_type_id NUMBER GENERATED ALWAYS AS IDENTITY,
       name            VARCHAR2 (50) NOT NULL ,
-      shop_id         NUMBER (10) NOT NULL
+      shop_id         NUMBER NOT NULL
    ) ;
 
 ALTER TABLE ARTICLE_TYPES ADD CONSTRAINT ARTICLE_TYPES_PK PRIMARY KEY
@@ -35,9 +35,9 @@ ALTER TABLE ARTICLE_TYPES ADD CONSTRAINT ARTICLE_TYPES_PK PRIMARY KEY
 
  CREATE TABLE BRANDS
    (
-      brand_id NUMBER (10) NOT NULL ,
+      brand_id NUMBER GENERATED ALWAYS AS IDENTITY ,
       name     VARCHAR2 (50) NOT NULL ,
-      shop_id  NUMBER (10) NOT NULL
+      shop_id  NUMBER NOT NULL
    ) ;
 
 
@@ -47,8 +47,8 @@ ALTER TABLE BRANDS ADD CONSTRAINT BRANDS_PK PRIMARY KEY ( brand_id )
 
  CREATE TABLE CUSTOMERS
    (
-      user_id  NUMBER (10) NOT NULL ,
-      state_id NUMBER (10) NOT NULL
+      user_id  NUMBER GENERATED ALWAYS AS IDENTITY ,
+      state_id NUMBER NOT NULL
    ) ;
 
 
@@ -57,12 +57,12 @@ user_id ) ;
 
  CREATE TABLE INVENTORY_MOVEMENTS
    (
-      inventory_movement_id        NUMBER (10) NOT NULL ,
-      article_id                   NUMBER (10) NOT NULL ,
+      inventory_movement_id        NUMBER GENERATED ALWAYS AS IDENTITY ,
+      article_id                   NUMBER NOT NULL ,
       type                         VARCHAR2 (3) NOT NULL ,
       quantity                     NUMBER (20,10) NOT NULL ,
-      inventory_movement_source_id NUMBER (10) NOT NULL ,
-      state_id                     NUMBER (10) NOT NULL
+      inventory_movement_source_id NUMBER NOT NULL ,
+      state_id                     NUMBER NOT NULL
    ) ;
 
 
@@ -76,8 +76,8 @@ PRIMARY KEY ( inventory_movement_id ) ;
 
  CREATE TABLE INVENTORY_MOVEMENT_SOURCES
    (
-      inventory_movement_source_id NUMBER (10) NOT NULL ,
-      name                         VARCHAR2 (50)
+      inventory_movement_source_id NUMBER GENERATED ALWAYS AS IDENTITY ,
+      name                         VARCHAR2 (100)
    ) ;
 
 
@@ -87,16 +87,16 @@ inventory_movement_source_id ) ;
 
  CREATE TABLE ORDERS
    (
-      order_id      NUMBER (10) NOT NULL ,
-      user_id       NUMBER (10) NOT NULL ,
-      shop_id       NUMBER (10) NOT NULL ,
+      order_id      NUMBER GENERATED ALWAYS AS IDENTITY ,
+      user_id       NUMBER NOT NULL ,
+      shop_id       NUMBER NOT NULL ,
       geoloc        VARCHAR2 (100) ,
       address       VARCHAR2 (100) NOT NULL ,
       comments      VARCHAR2 (300) ,
       request_time  TIMESTAMP NOT NULL ,
       response_time TIMESTAMP ,
       arrival_time  TIMESTAMP ,
-      state_id      NUMBER (10) NOT NULL
+      state_id      NUMBER NOT NULL
    ) ;
 
 
@@ -107,19 +107,20 @@ ALTER TABLE ORDERS ADD CONSTRAINT ORDERS_PK PRIMARY KEY ( order_id )
 
  CREATE TABLE ORDERS_DETAILS
    (
-      orders_details_id NUMBER (10) ,
-      article_id        NUMBER (10) NOT NULL ,
-      order_id          NUMBER (10) NOT NULL ,
+      orders_details_id NUMBER GENERATED ALWAYS AS IDENTITY,
+      article_id        NUMBER NOT NULL ,
+      order_id          NUMBER NOT NULL ,
       quantity          NUMBER (20,10) NOT NULL
    ) ;
-
+   ALTER TABLE ORDERS_DETAILS ADD CONSTRAINT ORDERS_DETAILS_PK PRIMARY KEY ( orders_details_id )
+   ;
 
 
 
 
  CREATE TABLE PEOPLE
    (
-      person_id NUMBER (10) NOT NULL ,
+      person_id NUMBER GENERATED ALWAYS AS IDENTITY ,
       name      VARCHAR2 (50) NOT NULL ,
       last_name VARCHAR2 (50) NOT NULL ,
       email     VARCHAR2 (300) NOT NULL ,
@@ -136,8 +137,8 @@ ALTER TABLE PEOPLE ADD CONSTRAINT PEOPLE__EMAIL_UNIQUE UNIQUE ( email
 
  CREATE TABLE SELLERS
    (
-      user_id  NUMBER (10) NOT NULL ,
-      state_id NUMBER (10) NOT NULL
+      user_id  NUMBER GENERATED ALWAYS AS IDENTITY ,
+      state_id NUMBER NOT NULL
    ) ;
 
 
@@ -146,9 +147,9 @@ ALTER TABLE SELLERS ADD CONSTRAINT SELLERS_PK PRIMARY KEY ( user_id )
 
  CREATE TABLE SHOPS
    (
-      shop_id           NUMBER (10) NOT NULL ,
-      user_id           NUMBER (10) NOT NULL ,
-      shop_type_id      NUMBER (10) NOT NULL ,
+      shop_id           NUMBER GENERATED ALWAYS AS IDENTITY ,
+      user_id           NUMBER NOT NULL ,
+      shop_type_id      NUMBER NOT NULL ,
       name              VARCHAR2 (50) NOT NULL ,
       telphone          NUMBER (20,10) ,
       celphone          NUMBER (20,10) NOT NULL ,
@@ -156,7 +157,7 @@ ALTER TABLE SELLERS ADD CONSTRAINT SELLERS_PK PRIMARY KEY ( user_id )
       geoloc            VARCHAR2 (100) NOT NULL ,
       coverage          NUMBER (20,10) NOT NULL ,
       avg_delivery_time NUMBER (10,5) ,
-      state_id          NUMBER (10) NOT NULL
+      state_id          NUMBER NOT NULL
    ) ;
 
 
@@ -170,7 +171,7 @@ ALTER TABLE SHOPS ADD CONSTRAINT SHOPS_PK PRIMARY KEY ( shop_id ) ;
 
  CREATE TABLE SHOP_TYPES
    (
-      shop_type_id NUMBER (10) NOT NULL ,
+      shop_type_id NUMBER GENERATED ALWAYS AS IDENTITY ,
       name         VARCHAR2 (50) NOT NULL
    ) ;
 
@@ -179,7 +180,7 @@ ALTER TABLE SHOP_TYPES ADD CONSTRAINT SHOP_TYPES_PK PRIMARY KEY (
 shop_type_id ) ;
 
  CREATE TABLE STATES
-   ( state_id NUMBER (10) NOT NULL , name VARCHAR2 (50)
+   ( state_id NUMBER GENERATED ALWAYS AS IDENTITY , name VARCHAR2 (50)
    ) ;
 
 
@@ -188,11 +189,11 @@ ALTER TABLE STATES ADD CONSTRAINT STATES_PK PRIMARY KEY ( state_id )
 
  CREATE TABLE USERS
    (
-      user_id       NUMBER (10) NOT NULL ,
+      user_id       NUMBER GENERATED ALWAYS AS IDENTITY ,
       password      VARCHAR2 (300) ,
       creation_date TIMESTAMP NOT NULL ,
-      person_id     NUMBER (10) NOT NULL ,
-      state_id      NUMBER (10) NOT NULL
+      person_id     NUMBER NOT NULL ,
+      state_id      NUMBER NOT NULL
    ) ;
 
 

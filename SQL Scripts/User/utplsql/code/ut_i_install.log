@@ -1,0 +1,454 @@
+-------------------------------------------------------------
+CREATING utPLSQL TABLES
+-------------------------------------------------------------
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_config
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_assertion
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_suite
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_utp
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_package
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_test
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_unittest
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_testcase
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_testprep
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_outcome
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_eq
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_suite_utp
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_argument
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  utr_suite
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  utr_utp
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  utr_unittest
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  utr_testcase
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  utr_outcome
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  utr_error
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_deterministic
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_deterministic_arg
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_receq
+
+                                                                                
+                                                                                
+Creating utPLSQL tables  ut_grid
+-------------------------------------------------------------
+CREATING utPLSQL SEQUENCES
+-------------------------------------------------------------
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_suite_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_package_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_utp_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_test_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_unittest_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_testcase_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_plsql_runnum_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_assertion_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_receq_seq
+
+                                                                                
+                                                                                
+Creating utPLSQL sequence  ut_refcursor_results_seq
+-------------------------------------------------------------
+CREATING utPLSQL VIEWS
+-------------------------------------------------------------
+
+                                                                                
+                                                                                
+Creating utPLSQL view  utv_result_full
+
+                                                                                
+                                                                                
+Creating utPLSQL view  utv_last_run
+-------------------------------------------------------------
+CREATING utPLSQL PACKAGE HEADERS
+-------------------------------------------------------------
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_config
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_plsql
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_report
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_outputreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_filereporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_htmlreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_result
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_plsql_util
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_assert2
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_assert
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_plsql2
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_result2
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_utp
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_testprep
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_unittest
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_testcase
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_outcome
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_suiteutp
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_suite
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_package
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_test
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_gen
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_rsuite
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_rutp
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_runittest
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_rtestcase
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_routcome
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_rerror
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_receq
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_output
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_filereporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_htmlreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_outputreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_report
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_pipe
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_utoutput
+
+                                                                                
+                                                                                
+Creating utPLSQL package specification  ut_utreport
+-------------------------------------------------------------
+CREATING utPLSQL PACKAGE BODIES
+-------------------------------------------------------------
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_config
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_plsql
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_report
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_outputreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_filereporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_htmlreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_result
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_plsql_util
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_assert2
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_assert
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_plsql2
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_result2
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_utp
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_testprep
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_unittest
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_testcase
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_outcome
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_suiteutp
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_suite
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_package
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_test
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_gen
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_rsuite
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_rutp
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_runittest
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_rtestcase
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_routcome
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_rerror
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_receq
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_output
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_filereporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_htmlreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_outputreporter
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_report
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_pipe
+
+Advertencia: Cuerpo del paquete creado con errores de compilación.
+
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_utoutput
+
+                                                                                
+                                                                                
+Creating utPLSQL package body  ut_utreport

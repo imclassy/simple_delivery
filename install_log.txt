@@ -1,0 +1,782 @@
+
+Rol borrado.
+
+
+Rol creado.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Usuario borrado.
+
+
+Usuario creado.
+
+
+Concesión terminada correctamente.
+
+
+Usuario borrado.
+
+
+Usuario creado.
+
+
+Concesión terminada correctamente.
+
+
+Usuario modificado.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+
+Concesión terminada correctamente.
+
+_____________________________________________________________________________
+User has all required privileges, installation will continue.
+_____________________________________________________________________________
+
+Procedimiento PL/SQL terminado correctamente.
+
+tables/logger_logs.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Procedimiento PL/SQL terminado correctamente.
+
+tables/logger_prefs.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+CUR_PLSQL_CCFLAGS
+--------------------------------------------------------------------------------
+
+
+antiguo   1: alter session set plsql_ccflags='currently_installing:true&cur_plsql_ccflags'
+nuevo	1: alter session set plsql_ccflags='currently_installing:true'
+
+Sesión modificada.
+
+
+Advertencia: Disparador creado con errores de compilación.
+
+
+Disparador modificado.
+
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Disparador modificado.
+
+tables/logger_logs_apex_items.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Disparador creado.
+
+tables/logger_prefs_by_client_id.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+jobs/logger_purge_job.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+jobs/logger_unset_prefs_by_client.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+views/logger_logs_5_min.sql
+
+Vista creada.
+
+views/logger_logs_60_min.sql
+
+Vista creada.
+
+views/logger_logs_terse.sql
+packages/logger.pks
+
+Paquete creado.
+
+packages/logger.pkb
+
+Cuerpo del paquete creado.
+
+Recompile biu_logger_prefs after logger.pkb
+
+Disparador modificado.
+
+contexts/logger_context.sql
+
+Procedimiento PL/SQL terminado correctamente.
+
+procedures/logger_configure.plb
+
+Procedimiento creado.
+
+install/post_install_configuration.sql
+Calling logger_configure
+
+Procedimiento PL/SQL terminado correctamente.
+
+Setting Logger Level
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+*************************************************
+Now executing LOGGER.STATUS...
+
+Project Home Page	 : https://github.com/oraopensource/logger/
+Logger Version		 : 3.1.0
+Debug Level		 : DEBUG
+Capture Call Stack	 : TRUE
+Protect Admin Procedures : TRUE
+APEX Tracing		 : Enabled
+SCN Capture		 : Disabled
+Min. Purge Level	 : DEBUG
+Purge Older Than	 : 7 days
+Pref by client_id expire : 12 hours
+For all client info see  : logger_prefs_by_client_id
+
+Procedimiento PL/SQL terminado correctamente.
+
+*************************************************
+
+Procedimiento PL/SQL terminado correctamente.
+
+
+Vista modificada.
+
+
+=============================================================
+GNU General Public License for utPLSQL
+
+Copyright (C) 2000-2003
+Steven Feuerstein and the utPLSQL Project
+(steven@stevenfeuerstein.com)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program (see license.txt); if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+=============================================================
+
+[ I N S T A L L A T I O N ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------
+CREATING utPLSQL TABLES
+-------------------------------------------------------------
+Creating utPLSQL tables  ut_config
+Creating utPLSQL tables  ut_assertion
+Creating utPLSQL tables  ut_suite
+Creating utPLSQL tables  ut_utp
+Creating utPLSQL tables  ut_package
+Creating utPLSQL tables  ut_test
+Creating utPLSQL tables  ut_unittest
+Creating utPLSQL tables  ut_testcase
+Creating utPLSQL tables  ut_testprep
+Creating utPLSQL tables  ut_outcome
+Creating utPLSQL tables  ut_eq
+Creating utPLSQL tables  ut_suite_utp
+Creating utPLSQL tables  ut_argument
+Creating utPLSQL tables  utr_suite
+Creating utPLSQL tables  utr_utp
+Creating utPLSQL tables  utr_unittest
+Creating utPLSQL tables  utr_testcase
+Creating utPLSQL tables  utr_outcome
+Creating utPLSQL tables  utr_error
+Creating utPLSQL tables  ut_deterministic
+Creating utPLSQL tables  ut_deterministic_arg
+Creating utPLSQL tables  ut_receq
+Creating utPLSQL tables  ut_grid
+-------------------------------------------------------------
+CREATING utPLSQL SEQUENCES
+-------------------------------------------------------------
+Creating utPLSQL sequence  ut_suite_seq
+Creating utPLSQL sequence  ut_package_seq
+Creating utPLSQL sequence  ut_utp_seq
+Creating utPLSQL sequence  ut_test_seq
+Creating utPLSQL sequence  ut_unittest_seq
+Creating utPLSQL sequence  ut_testcase_seq
+Creating utPLSQL sequence  ut_plsql_runnum_seq
+Creating utPLSQL sequence  ut_assertion_seq
+Creating utPLSQL sequence  ut_receq_seq
+Creating utPLSQL sequence  ut_refcursor_results_seq
+-------------------------------------------------------------
+CREATING utPLSQL VIEWS
+-------------------------------------------------------------
+Creating utPLSQL view  utv_result_full
+Creating utPLSQL view  utv_last_run
+-------------------------------------------------------------
+CREATING utPLSQL PACKAGE HEADERS
+-------------------------------------------------------------
+Creating utPLSQL package specification	ut_config
+Creating utPLSQL package specification	ut_plsql
+Creating utPLSQL package specification	ut_report
+Creating utPLSQL package specification	ut_outputreporter
+Creating utPLSQL package specification	ut_filereporter
+Creating utPLSQL package specification	ut_htmlreporter
+Creating utPLSQL package specification	ut_result
+Creating utPLSQL package specification	ut_plsql_util
+Creating utPLSQL package specification	ut_assert2
+Creating utPLSQL package specification	ut_assert
+Creating utPLSQL package specification	ut_plsql2
+Creating utPLSQL package specification	ut_result2
+Creating utPLSQL package specification	ut_utp
+Creating utPLSQL package specification	ut_testprep
+Creating utPLSQL package specification	ut_unittest
+Creating utPLSQL package specification	ut_testcase
+Creating utPLSQL package specification	ut_outcome
+Creating utPLSQL package specification	ut_suiteutp
+Creating utPLSQL package specification	ut_suite
+Creating utPLSQL package specification	ut_package
+Creating utPLSQL package specification	ut_test
+Creating utPLSQL package specification	ut_gen
+Creating utPLSQL package specification	ut_rsuite
+Creating utPLSQL package specification	ut_rutp
+Creating utPLSQL package specification	ut_runittest
+Creating utPLSQL package specification	ut_rtestcase
+Creating utPLSQL package specification	ut_routcome
+Creating utPLSQL package specification	ut_rerror
+Creating utPLSQL package specification	ut_receq
+Creating utPLSQL package specification	ut_output
+Creating utPLSQL package specification	ut_filereporter
+Creating utPLSQL package specification	ut_htmlreporter
+Creating utPLSQL package specification	ut_outputreporter
+Creating utPLSQL package specification	ut_report
+Creating utPLSQL package specification	ut_pipe
+Creating utPLSQL package specification	ut_utoutput
+Creating utPLSQL package specification	ut_utreport
+-------------------------------------------------------------
+CREATING utPLSQL PACKAGE BODIES
+-------------------------------------------------------------
+Creating utPLSQL package body  ut_config
+Creating utPLSQL package body  ut_plsql
+Creating utPLSQL package body  ut_report
+Creating utPLSQL package body  ut_outputreporter
+Creating utPLSQL package body  ut_filereporter
+Creating utPLSQL package body  ut_htmlreporter
+Creating utPLSQL package body  ut_result
+Creating utPLSQL package body  ut_plsql_util
+Creating utPLSQL package body  ut_assert2
+Creating utPLSQL package body  ut_assert
+Creating utPLSQL package body  ut_plsql2
+Creating utPLSQL package body  ut_result2
+Creating utPLSQL package body  ut_utp
+Creating utPLSQL package body  ut_testprep
+Creating utPLSQL package body  ut_unittest
+Creating utPLSQL package body  ut_testcase
+Creating utPLSQL package body  ut_outcome
+Creating utPLSQL package body  ut_suiteutp
+Creating utPLSQL package body  ut_suite
+Creating utPLSQL package body  ut_package
+Creating utPLSQL package body  ut_test
+Creating utPLSQL package body  ut_gen
+Creating utPLSQL package body  ut_rsuite
+Creating utPLSQL package body  ut_rutp
+Creating utPLSQL package body  ut_runittest
+Creating utPLSQL package body  ut_rtestcase
+Creating utPLSQL package body  ut_routcome
+Creating utPLSQL package body  ut_rerror
+Creating utPLSQL package body  ut_receq
+Creating utPLSQL package body  ut_output
+Creating utPLSQL package body  ut_filereporter
+Creating utPLSQL package body  ut_htmlreporter
+Creating utPLSQL package body  ut_outputreporter
+Creating utPLSQL package body  ut_report
+Creating utPLSQL package body  ut_pipe
+
+Advertencia: Cuerpo del paquete creado con errores de compilación.
+
+Creating utPLSQL package body  ut_utoutput
+Creating utPLSQL package body  ut_utreport
+-------------------------------------------------------------
+CREATING SYNONYMS FOR utPLSQL OBJECTS
+-------------------------------------------------------------
+Creating synonyms ...
+create public synonym UTASSERT for UTASSERT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTASSERT2 for UTASSERT2
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTCONFIG for UTCONFIG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTFILEREPORTER for UTFILEREPORTER
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTGEN for UTGEN
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTHTMLREPORTER for UTHTMLREPORTER
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTOUTCOME for UTOUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTOUTPUT for UTOUTPUT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTOUTPUTREPORTER for UTOUTPUTREPORTER
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPACKAGE for UTPACKAGE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPIPE for UTPIPE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL for UTPLSQL
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL2 for UTPLSQL2
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL_RUNNUM_SEQ for UTPLSQL_RUNNUM_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL_UTIL for UTPLSQL_UTIL
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRECEQ for UTRECEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTREPORT for UTREPORT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRERROR for UTRERROR
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRESULT for UTRESULT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRESULT2 for UTRESULT2
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTROUTCOME for UTROUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRSUITE for UTRSUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRTESTCASE for UTRTESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRUNITTEST for UTRUNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRUTP for UTRUTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_ERROR for UTR_ERROR
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_OUTCOME for UTR_OUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_SUITE for UTR_SUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_TESTCASE for UTR_TESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_UNITTEST for UTR_UNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_UTP for UTR_UTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTSUITE for UTSUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTSUITEUTP for UTSUITEUTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTTEST for UTTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTTESTCASE for UTTESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTTESTPREP for UTTESTPREP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTUNITTEST for UTUNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTUTP for UTUTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTV_LAST_RUN for UTV_LAST_RUN
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTV_RESULT_FULL for UTV_RESULT_FULL
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_ARGUMENT for UT_ARGUMENT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_ASSERTION for UT_ASSERTION
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_ASSERTION_SEQ for UT_ASSERTION_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_CONFIG for UT_CONFIG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_DETERMINISTIC for UT_DETERMINISTIC
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_DETERMINISTIC_ARG for UT_DETERMINISTIC_ARG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_EQ for UT_EQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_GRID for UT_GRID
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_OUTCOME for UT_OUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_PACKAGE for UT_PACKAGE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_PACKAGE_SEQ for UT_PACKAGE_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_RECEQ for UT_RECEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_RECEQ_PKG for UT_RECEQ_PKG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_RECEQ_SEQ for UT_RECEQ_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_REFCURSOR_RESULTS_SEQ for UT_REFCURSOR_RESULTS_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_SUITE for UT_SUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_SUITE_SEQ for UT_SUITE_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_SUITE_UTP for UT_SUITE_UTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TEST for UT_TEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TESTCASE for UT_TESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TESTCASE_SEQ for UT_TESTCASE_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TESTPREP for UT_TESTPREP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TEST_SEQ for UT_TEST_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_UNITTEST for UT_UNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_UNITTEST_SEQ for UT_UNITTEST_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_UTP for UT_UTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_UTP_SEQ for UT_UTP_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+.			     Finished
+-------------------------------------------------------------
+GRANTS FOR utPLSQL OBJECTS
+-------------------------------------------------------------
+Granting all on every object...
+.			     Finished
+Granting execute on packages...
+.			     Finished

@@ -1,5 +1,5 @@
-call "SQL Scripts\User\run.bat"
-echo "hi"
-cmd /c "SQL Scripts\Tables\run.bat"
-call "Packages\run.bat"
+del install_log.txt
+call "SQL Scripts\User\run.bat"  >> install_log.txt
+call "SQL Scripts\Tables\run.bat"  >> install_log.txt
+call "Packages\run.bat"  >> install_log.txt
 pause

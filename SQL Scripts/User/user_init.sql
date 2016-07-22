@@ -3,7 +3,7 @@ CREATE ROLE admin_role;
 
 GRANT connect, create view, create job, create table, create sequence,
       create trigger, create procedure, create any context,
-      create public synonym, create session  TO admin_role;
+      create public synonym, drop public synonym , create session  TO admin_role;
 
 GRANT SELECT ANY TABLE, INSERT ANY TABLE, UPDATE ANY TABLE,  DELETE ANY TABLE, CREATE ANY TABLE TO admin_role;
 
@@ -20,6 +20,8 @@ GRANT admin_role TO simple_delivery;
 DROP USER simple_delivery_utp CASCADE;
 CREATE USER simple_delivery_utp IDENTIFIED BY 123456;
 GRANT admin_role TO simple_delivery_utp;
+
+GRANT EXECUTE ON dbms_pipe TO simple_delivery_utp;
 
 alter user simple_delivery_utp quota unlimited on users;
 

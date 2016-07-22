@@ -1,0 +1,282 @@
+Start "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\init.sql"
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+Completed "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\init.sql"
+Start "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\TE_TEMPLATES.sql"
+
+Tabla creada.
+
+
+Índice creado.
+
+
+Tabla modificada.
+
+Completed "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\TE_TEMPLATES.sql"
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pkb

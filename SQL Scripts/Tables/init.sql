@@ -13,7 +13,7 @@
       description VARCHAR2 (300) ,
       stock       NUMBER (20,10) NOT NULL ,
       price       NUMBER (30,10) NOT NULL ,
-      picture BLOB ,
+      picture     VARCHAR2(500) ,
       shop_id         NUMBER NOT NULL ,
       brand_id        NUMBER NOT NULL ,
       article_type_id NUMBER NOT NULL ,

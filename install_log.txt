@@ -41,6 +41,9 @@ Usuario creado.
 Concesión terminada correctamente.
 
 
+Concesión terminada correctamente.
+
+
 Usuario modificado.
 
 
@@ -156,8 +159,14 @@ Procedimiento creado.
 
 install/post_install_configuration.sql
 Calling logger_configure
+begin
+*
+ERROR en línea 1:
+ORA-65047: el objeto PUBLIC.APEX_APPLICATION_ITEMS no es válido o se ha
+compilado con errores en CDB$ROOT
+ORA-06512: en "SIMPLE_DELIVERY.LOGGER_CONFIGURE", línea 66
+ORA-06512: en línea 2
 
-Procedimiento PL/SQL terminado correctamente.
 
 Setting Logger Level
 
@@ -172,7 +181,7 @@ Logger Version		 : 3.1.0
 Debug Level		 : DEBUG
 Capture Call Stack	 : TRUE
 Protect Admin Procedures : TRUE
-APEX Tracing		 : Enabled
+APEX Tracing		 : Disabled
 SCN Capture		 : Disabled
 Min. Purge Level	 : DEBUG
 Purge Older Than	 : 7 days
@@ -361,400 +370,13 @@ Creating utPLSQL package body  ut_htmlreporter
 Creating utPLSQL package body  ut_outputreporter
 Creating utPLSQL package body  ut_report
 Creating utPLSQL package body  ut_pipe
-
-Advertencia: Cuerpo del paquete creado con errores de compilación.
-
 Creating utPLSQL package body  ut_utoutput
 Creating utPLSQL package body  ut_utreport
 -------------------------------------------------------------
 CREATING SYNONYMS FOR utPLSQL OBJECTS
 -------------------------------------------------------------
 Creating synonyms ...
-create public synonym UTASSERT for UTASSERT
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTASSERT2 for UTASSERT2
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTCONFIG for UTCONFIG
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTFILEREPORTER for UTFILEREPORTER
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTGEN for UTGEN
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTHTMLREPORTER for UTHTMLREPORTER
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTOUTCOME for UTOUTCOME
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTOUTPUT for UTOUTPUT
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTOUTPUTREPORTER for UTOUTPUTREPORTER
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTPACKAGE for UTPACKAGE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTPIPE for UTPIPE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTPLSQL for UTPLSQL
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTPLSQL2 for UTPLSQL2
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTPLSQL_RUNNUM_SEQ for UTPLSQL_RUNNUM_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTPLSQL_UTIL for UTPLSQL_UTIL
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRECEQ for UTRECEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTREPORT for UTREPORT
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRERROR for UTRERROR
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRESULT for UTRESULT
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRESULT2 for UTRESULT2
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTROUTCOME for UTROUTCOME
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRSUITE for UTRSUITE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRTESTCASE for UTRTESTCASE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRUNITTEST for UTRUNITTEST
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTRUTP for UTRUTP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTR_ERROR for UTR_ERROR
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTR_OUTCOME for UTR_OUTCOME
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTR_SUITE for UTR_SUITE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTR_TESTCASE for UTR_TESTCASE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTR_UNITTEST for UTR_UNITTEST
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTR_UTP for UTR_UTP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTSUITE for UTSUITE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTSUITEUTP for UTSUITEUTP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTTEST for UTTEST
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTTESTCASE for UTTESTCASE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTTESTPREP for UTTESTPREP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTUNITTEST for UTUNITTEST
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTUTP for UTUTP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTV_LAST_RUN for UTV_LAST_RUN
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UTV_RESULT_FULL for UTV_RESULT_FULL
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_ARGUMENT for UT_ARGUMENT
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_ASSERTION for UT_ASSERTION
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_ASSERTION_SEQ for UT_ASSERTION_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_CONFIG for UT_CONFIG
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_DETERMINISTIC for UT_DETERMINISTIC
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_DETERMINISTIC_ARG for UT_DETERMINISTIC_ARG
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_EQ for UT_EQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_GRID for UT_GRID
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_OUTCOME for UT_OUTCOME
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_PACKAGE for UT_PACKAGE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_PACKAGE_SEQ for UT_PACKAGE_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_RECEQ for UT_RECEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_RECEQ_PKG for UT_RECEQ_PKG
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_RECEQ_SEQ for UT_RECEQ_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_REFCURSOR_RESULTS_SEQ for UT_REFCURSOR_RESULTS_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_SUITE for UT_SUITE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_SUITE_SEQ for UT_SUITE_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_SUITE_UTP for UT_SUITE_UTP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_TEST for UT_TEST
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_TESTCASE for UT_TESTCASE
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_TESTCASE_SEQ for UT_TESTCASE_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_TESTPREP for UT_TESTPREP
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_TEST_SEQ for UT_TEST_SEQ
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_UNITTEST for UT_UNITTEST
-                      *
-ERROR en línea 1:
-ORA-00955: este nombre ya lo está utilizando otro objeto existente
-
-
-create public synonym UT_UNITTEST_SEQ for UT_UNITTEST_SEQ
+create public synonym UT_UTP_SEQ for UT_UTP_SEQ
                       *
 ERROR en línea 1:
 ORA-00955: este nombre ya lo está utilizando otro objeto existente
@@ -766,7 +388,391 @@ ERROR en línea 1:
 ORA-00955: este nombre ya lo está utilizando otro objeto existente
 
 
-create public synonym UT_UTP_SEQ for UT_UTP_SEQ
+create public synonym UT_UNITTEST_SEQ for UT_UNITTEST_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_UNITTEST for UT_UNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TEST_SEQ for UT_TEST_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TESTPREP for UT_TESTPREP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TESTCASE_SEQ for UT_TESTCASE_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TESTCASE for UT_TESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_TEST for UT_TEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_SUITE_UTP for UT_SUITE_UTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_SUITE_SEQ for UT_SUITE_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_SUITE for UT_SUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_REFCURSOR_RESULTS_SEQ for UT_REFCURSOR_RESULTS_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_RECEQ_SEQ for UT_RECEQ_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_RECEQ_PKG for UT_RECEQ_PKG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_RECEQ for UT_RECEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_PACKAGE_SEQ for UT_PACKAGE_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_PACKAGE for UT_PACKAGE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_OUTCOME for UT_OUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_GRID for UT_GRID
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_EQ for UT_EQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_DETERMINISTIC_ARG for UT_DETERMINISTIC_ARG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_DETERMINISTIC for UT_DETERMINISTIC
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_CONFIG for UT_CONFIG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_ASSERTION_SEQ for UT_ASSERTION_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_ASSERTION for UT_ASSERTION
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UT_ARGUMENT for UT_ARGUMENT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTV_RESULT_FULL for UTV_RESULT_FULL
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTV_LAST_RUN for UTV_LAST_RUN
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTUTP for UTUTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTUNITTEST for UTUNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTTESTPREP for UTTESTPREP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTTESTCASE for UTTESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTTEST for UTTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTSUITEUTP for UTSUITEUTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTSUITE for UTSUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_UTP for UTR_UTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_UNITTEST for UTR_UNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_TESTCASE for UTR_TESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_SUITE for UTR_SUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_OUTCOME for UTR_OUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTR_ERROR for UTR_ERROR
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRUTP for UTRUTP
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRUNITTEST for UTRUNITTEST
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRTESTCASE for UTRTESTCASE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRSUITE for UTRSUITE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTROUTCOME for UTROUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRESULT2 for UTRESULT2
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRESULT for UTRESULT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRERROR for UTRERROR
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTREPORT for UTREPORT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTRECEQ for UTRECEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL_UTIL for UTPLSQL_UTIL
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL_RUNNUM_SEQ for UTPLSQL_RUNNUM_SEQ
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL2 for UTPLSQL2
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPLSQL for UTPLSQL
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPIPE for UTPIPE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTPACKAGE for UTPACKAGE
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTOUTPUTREPORTER for UTOUTPUTREPORTER
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTOUTPUT for UTOUTPUT
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTOUTCOME for UTOUTCOME
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTHTMLREPORTER for UTHTMLREPORTER
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTGEN for UTGEN
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTFILEREPORTER for UTFILEREPORTER
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTCONFIG for UTCONFIG
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTASSERT2 for UTASSERT2
+                      *
+ERROR en línea 1:
+ORA-00955: este nombre ya lo está utilizando otro objeto existente
+
+
+create public synonym UTASSERT for UTASSERT
                       *
 ERROR en línea 1:
 ORA-00955: este nombre ya lo está utilizando otro objeto existente
@@ -780,3 +786,285 @@ Granting all on every object...
 .			     Finished
 Granting execute on packages...
 .			     Finished
+Start "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\init.sql"
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla creada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+
+Tabla modificada.
+
+Completed "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\init.sql"
+Start "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\TE_TEMPLATES.sql"
+
+Tabla creada.
+
+
+Índice creado.
+
+
+Tabla modificada.
+
+Completed "W:\Proyectos\DomiTienda\simple_delivery\SQL Scripts\Tables\\TE_TEMPLATES.sql"
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pks
+
+Paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pks
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_articles.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\TAPI_GEN2.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_orders_details.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_people.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_sellers.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shops.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_shop_types.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_states.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tapi_users.pkb
+Start W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pkb
+
+Cuerpo del paquete creado.
+
+Completed W:\Proyectos\DomiTienda\simple_delivery\Packages\\tePLSQL.pkb

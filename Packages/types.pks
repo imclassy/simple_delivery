@@ -1,0 +1,5 @@
+CREATE OR REPLACE PACKAGE types
+AS
+  SUBTYPE user_type IS VARCHAR2(1);
+END types;
+/

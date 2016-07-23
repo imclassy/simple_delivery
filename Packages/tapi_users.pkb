@@ -147,7 +147,7 @@ create or replace PACKAGE BODY tapi_users IS
    FUNCTION rt (
                p_user_id IN users.user_id%TYPE
                )
-      RETURN users_rt RESULT_CACHE
+      RETURN users_rt
    IS
       l_scope logger_logs.scope%TYPE := gc_scope_prefix || 'rt';
       l_params logger.tab_param;
@@ -180,7 +180,7 @@ create or replace PACKAGE BODY tapi_users IS
    FUNCTION rt_for_update (
                           p_user_id IN users.user_id%TYPE
                           )
-      RETURN users_rt RESULT_CACHE
+      RETURN users_rt
    IS
       l_scope logger_logs.scope%TYPE := gc_scope_prefix || 'rt_for_update';
       l_params logger.tab_param;

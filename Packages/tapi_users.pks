@@ -65,7 +65,7 @@ IS
    FUNCTION rt (
                 p_user_id IN users.user_id%TYPE
                )
-    RETURN users_rt RESULT_CACHE;
+    RETURN users_rt;
 
    /**
    * This is a table encapsulation function designed to retrieve information
@@ -81,7 +81,7 @@ IS
    FUNCTION rt_for_update (
                           p_user_id IN users.user_id%TYPE
                           )
-    RETURN users_rt RESULT_CACHE;
+    RETURN users_rt;
 
    /**
    * This is a table encapsulation function designed to retrieve information from the users table.

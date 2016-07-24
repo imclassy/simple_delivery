@@ -31,10 +31,32 @@ AS
   RETURN boolean RESULT_CACHE
   AS
     v_valid boolean := false;
+    v_user tapi_users.users_rt;
+    v_user_exists boolean := true;
   begin
-    -- TO DO!!!
+    <<get_user>>
+    BEGIN
+      v_user := tapi_users.rt(p_user_id);
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        v_user_exists := false;
+    END get_user;
+
+    IF v_user_exists THEN
+      IF v_user.password = md5(p_password) THEN
+        v_valid := true;
+      END IF;
+    END IF;
+    
     RETURN v_valid;
   END valid_password;
+
+  FUNCTION md5(p_string VARCHAR2)
+  RETURN CLOB
+  AS
+  BEGIN
+    RETURN to_clob(dbms_crypto.hash(to_clob(p_string), 2));
+  END md5;
 
 END login;
 /

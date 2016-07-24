@@ -4,14 +4,11 @@ AS
   RETURN boolean RESULT_CACHE
   AS
     v_exists boolean := true;
-    v_dummy NUMBER;
+    v_customer tapi_customers.customers_rt;
   begin
     <<search_customer>>
     BEGIN
-      SELECT 1
-        INTO v_dummy
-        FROM customers
-       WHERE user_id = p_user_id;
+      v_customer := tapi_customers.rt(p_user_id);
     EXCEPTION
       WHEN NO_DATA_FOUND THEN
         v_exists := false;
@@ -24,18 +21,15 @@ AS
   RETURN boolean RESULT_CACHE
   AS
     v_exists boolean := true;
-    v_dummy NUMBER;
+    v_seller tapi_sellers.sellers_rt;
   begin
-    <<search_seller>>
+    <<get_seller>>
     BEGIN
-      SELECT 1
-        INTO v_dummy
-        FROM sellers
-       WHERE user_id = p_user_id;
+      v_seller := tapi_sellers.rt(p_user_id);
     EXCEPTION
       WHEN NO_DATA_FOUND THEN
         v_exists := false;
-    END search_seller;
+    END get_seller;
 
     RETURN v_exists;
   END is_seller;

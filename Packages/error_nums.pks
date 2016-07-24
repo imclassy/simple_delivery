@@ -7,5 +7,9 @@ AS
   FUNCTION invalid_user_type
   RETURN errors.error_id%type RESULT_CACHE;
 
+  /* Getter function for c_invalid_error_id constant */
+  FUNCTION invalid_error_id
+  RETURN errors.error_id%type RESULT_CACHE;
+
 END error_nums;
 /

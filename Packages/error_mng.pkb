@@ -1,6 +1,6 @@
 CREATE OR REPLACE PACKAGE BODY error_mng
 AS
-  -- Raises an error based on the error code in ERRORS table
+  
   PROCEDURE raise (p_error_id errors.error_id%type,
                    p_extra_msg errors.message%type DEFAULT NULL)
   AS

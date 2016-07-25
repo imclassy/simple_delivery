@@ -14,5 +14,13 @@
         "port" : 1521,
         "user" : "simple_delivery",
         "password" : "123456"
+    },
+    {
+        "targetName" : "simple_delivery_utp: pdborcl",
+        "host" : "localhost",
+        "sid" : "pdborcl",
+        "port" : 1521,
+        "user" : "simple_delivery_utp",
+        "password" : "123456"
     }
 ]

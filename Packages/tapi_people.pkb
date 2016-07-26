@@ -276,7 +276,8 @@ create or replace PACKAGE BODY tapi_people IS
         l_rowtype.cellphone := ins.p_people_rec.cellphone;
 
        INSERT INTO people
-         VALUES   l_rowtype;
+         VALUES   l_rowtype
+         RETURNING person_id INTO p_people_rec.person_id;
 
        logger.LOG('END', l_scope);
 

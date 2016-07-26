@@ -1,5 +1,5 @@
 -- TAPI_USERS specification
-CREATE OR REPLACE PACKAGE SIMPLE_DELIVERY.tapi_users
+CREATE OR REPLACE PACKAGE tapi_users
 IS
    /**
    * TAPI_USERS

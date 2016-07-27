@@ -16,4 +16,3 @@ exit | sqlplus -S %vUserName%/%vPassword%@%vHost%:%VPortNo%/%vServiceName% @"%%f
 echo Completed "%%f"
 )
 exit | sqlplus -S %vUserName%/%vPassword%@%vHost%:%VPortNo%/%vServiceName% @"set_dir.sql" %~dp0.
-pause

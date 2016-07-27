@@ -12,6 +12,6 @@ call "%~dp0Permissions\run.bat" >> %~dp0install.log
 echo Initializing data
 call "%~dp0SQL Scripts\Data\run.bat" >> %~dp0install.log
 echo Initializing test packages
-call "%~dp0Tests\run.bat" >> %~dp0install.log
+call "%~dp0Tests\run.bat" >> install.log
 echo Set up completed! Check the install_log for installation results.
 pause

@@ -276,7 +276,8 @@ CREATE OR REPLACE PACKAGE BODY SIMPLE_DELIVERY.tapi_users IS
         l_rowtype.state_id := ins.p_users_rec.state_id;
 
        INSERT INTO users
-         VALUES   l_rowtype;
+         VALUES   l_rowtype
+         RETURNING user_id INTO p_users_rec.user_id;
 
        logger.LOG('END', l_scope);
 

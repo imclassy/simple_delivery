@@ -1,6 +1,6 @@
 @echo off
 echo Starting installation
-del install_log.txt
+del install.log
 echo Initializing database users
 call "SQL Scripts\User\run.bat" >> install.log
 echo Initializing tables

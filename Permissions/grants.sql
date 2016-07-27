@@ -23,6 +23,12 @@ BEGIN
 
       v_sql := 'GRANT SELECT ON SIMPLE_DELIVERY.'||obj.name||' TO SIMPLE_DELIVERY_UTP';
       EXECUTE IMMEDIATE v_sql;
+      v_sql := 'GRANT INSERT ON SIMPLE_DELIVERY.'||obj.name||' TO SIMPLE_DELIVERY_UTP';
+      EXECUTE IMMEDIATE v_sql;
+      v_sql := 'GRANT DELETE ON SIMPLE_DELIVERY.'||obj.name||' TO SIMPLE_DELIVERY_UTP';
+      EXECUTE IMMEDIATE v_sql;
+      v_sql := 'GRANT UPDATE ON SIMPLE_DELIVERY.'||obj.name||' TO SIMPLE_DELIVERY_UTP';
+      EXECUTE IMMEDIATE v_sql;
 
    END loop;
 END;

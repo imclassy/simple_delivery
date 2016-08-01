@@ -1,5 +1,4 @@
 begin
-  utconfig.setdir ('&1');
-  commit;
+  utConfig.autocompile(false);
 end;
 /

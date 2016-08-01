@@ -31,4 +31,24 @@ Cuerpo del paquete creado.
 
 Completed "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_users_management.pkb"
 SP2-0310: no se ha podido abrir el archivo "set_dir.sql"
-Press any key to continue . . . 
+Press any key to continue . . . Start "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_login.pks"
+
+Paquete creado.
+
+Completed "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_login.pks"
+Start "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_user_management.pks"
+
+Paquete creado.
+
+Completed "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_user_management.pks"
+Start "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_login.pkb"
+
+Cuerpo del paquete creado.
+
+Completed "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_login.pkb"
+Start "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_users_management.pkb"
+
+Cuerpo del paquete creado.
+
+Completed "D:\Users\PJARABA\Documents\PJP\Web PJP\simple_delivery\Tests\\ut_users_management.pkb"
+SP2-0310: no se ha podido abrir el archivo "set_dir.sql"
